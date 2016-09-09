@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	.one{
+		width: 300px;
+		height: 300px;
+		background-color: red;
+		border-radius: 155px;
+		position:relative;
+        
+	 }
+    .two{
+        padding-top: 100px;height: 100%;overflow: hidden;
+    }
+    .three{
+    	width: 300px;
+    	height: 300px;
+    	border-radius: 155px;
+    	background-color: blue;
+		background: url(image/1.jpg) no-repeat;background-size: 100%;
+		position: absolute; top: 0;left: 0;
+		overflow: hidden;
+    }
+    .one:hover .three{
+    	transform-origin: 90% 40%;
+    	transform:rotate(-130deg);
+    	transition:all 1s ease;
+    	overflow: hidden;
+    }
+    .four{
+    	width: 100px;
+    	height: 100px;
+    	border-radius: 50px;
+    	background-color: yellow;
+    	margin: -20px 140px;
+    	line-height: 100px;
+    	text-align: center;
+    }
+    .one:hover .four{
+    	transition: all 1s ease;
+    	    transform: rotate(360deg);
+    	    margin: -20px 100px;
+    }
+	p{
+	  text-align: center;line-height:2em;
+	}
+	</style>
+</head>
+<body>
+	<div class="one">
+		<div class="two">
+			<p>weaponlee</p>
+			<p>weaponlee</p>
+			<div class="four">weaponlee</div>
+		</div>
+		<div class="three"></div>
+	</div>
+	
+</body>
+</html>
